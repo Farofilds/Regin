@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trio triunfal</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" scr="mason.png">
+</head>
+<body>
+    <header>
+        <div class="center">
+            <img src="luazinha.png" alt="luazinha">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="dicas.html">dicas</a>
+            </li>
+        </ul>
+    </nav>
+
+    <style>
+        .login-container {
+            background: #000000;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 110px;
+        }
+        input {
+            margin: 10px 0;
+            padding: 10px;
+            width: 98%;
+            border-radius: 5px;
+        }
+        button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .message {
+            margin-top: 15px;
+            color: red;
+        }
+    </style>
+
+
+<div class="login-container">
+    <h2>senha</h2>
+    <input type="text" id="username" placeholder="senha1">
+    <input type="text" id="password" placeholder="senha2">
+    <button onclick="validarLogin()">Entrar</button>
+    <div class="message" id="message"></div>
+</div>
+
+<script>
+    function validarLogin() {
+        const labareda = document.getElementById('username').value;
+        const labaredo = document.getElementById('password').value;
+        const mensagem = document.getElementById('message');
+
+        const labareda1 = "enzo";
+        const labareda2 = "gabriel";
+
+        if (labareda === labareda1 && labaredo === labareda2) {
+            mensagem.style.color = 'green';
+            mensagem.textContent = 'acerto, mizeravi';
+            window.location.href = 'nivel2.html';
+  
+        } else {
+            mensagem.style.color = 'red';
+            mensagem.textContent = 'dica: quem é esse?';
+        }
+    }
+</script>
+
+</body>
+</html>
