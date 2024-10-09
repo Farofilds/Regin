@@ -1,0 +1,38 @@
+body { /*mexe com o body inteiro*/
+    color : white;
+    background-color : black;
+    font-family:cursive;
+}
+
+ul { /*mexe com o texto*/
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+a { /* mexe com a fonte*/
+    color: white;
+    text-decoration: none; 
+}
+
+img { /*mexe com a imagem*/
+    margin-top: 50px;
+}
+
+.center { /*. = classe*/
+    text-align: center; /*tudo que tiver .center vai ficar no centro*/
+}
+
+.Regin {
+    position: relative; /* Permite mover a imagem */
+    top: -40px; /* Move a imagem para baixo */
+    left: 5px; /* Move a imagem para a direita */
+    width: 150px;
+    height: 150px;
+}
+
+.monstro {
+    border: 2px solid white;
+}

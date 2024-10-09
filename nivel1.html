@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O começo</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="nivel1.js"></script>
+    <link rel="icon" href="olho.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="center">
+            <img src="TheBabadook_02-1130x590.jpg" class="aaa" alt="monstro">
+        </div>
+    </header>
+
+    <style>
+        .login-container {
+            background: #000000;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 110px;
+        }
+        input {
+            margin: 10px 0;
+            padding: 10px;
+            width: 98%;
+            border-radius: 5px;
+        }
+        button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .message {
+            margin-top: 15px;
+            color: red;
+        }
+
+        .aaa {
+    border: 3px solid white;
+}
+
+    </style>
+
+
+<div class="login-container">
+    <h2>senha</h2>
+    <input type="text" id="username" placeholder="senha1">
+    <button onclick="validarLogin()">Entrar</button>
+    <div class="message" id="message"></div>
+</div>
+
+</body>
+</html>
